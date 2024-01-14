@@ -88,6 +88,13 @@ plt.plot(B_hist, 'b')
 # Merging all equalized layers into original image
 eq_im = cv2.merge([b_eq, g_eq, r_eq])
 
+plt.subplot(1,2,1)
+plt.title("Original Image")
+plt.imshow(image)
+plt.subplot(1,2,2)
+plt.title("Equalized Image")
+plt.imshow(eq_im)
+
 # Visualize equalized original image
 cv2.namedWindow("Original Image", cv2.WINDOW_NORMAL);
 cv2.imshow("Original Image",image);

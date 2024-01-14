@@ -15,7 +15,7 @@ import dicom2jpg
 from PIL import Image
 
 # Reading a single dicom file
-dicom_file = pydicom.read_file('D:/Course Materials [Erasmus MSc]/University of Kragujevac/Biomedical Image Processing/Assignments/Seminar Paper/Patient 1 - Spine/DICOM/5DB02D1B')
+dicom_file = pydicom.read_file('D:/Course Materials [Erasmus MSc]/University of Kragujevac/Biomedical Image Processing/Assignments/Datasets/Spine_DICOM/5DB02D1B')
 # print(dicom_file)
 # print(dicom_file.Rows)
 

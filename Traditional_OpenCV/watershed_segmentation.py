@@ -29,7 +29,7 @@ gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 # Threshold using OTSU
 ret, thresh = cv2.threshold(gray, 0, 255, cv2.THRESH_BINARY_INV + cv2.THRESH_OTSU)
 plt.axis('off')
-plt.imshow(thresh)
+plt.imshow(thresh, cmap='gray')
 
 # noise removal
 kernel = np.ones((3,3), np.uint8)
